@@ -27,8 +27,8 @@ class models_token_get extends Model
 			->where('user_id', '=', $id)
 			->get();
 		return $users;
-
-    }
+	}
+	
 	public static function get_count_records($token)
     {
 		//$token - токен пользователя для высчитывания количества записей
@@ -93,7 +93,8 @@ class models_token_get extends Model
 	}
 	public static function Create_New_Table($token, $request)
 	{
-		try{
+		try
+		{
 			$arr = "";
 			foreach($_GET as $value)
 			{
